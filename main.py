@@ -1,9 +1,3 @@
-"""
-EYEMECH ε3.2 control code adapted for ESP32 with PCA9685 servo controller
-Based on Will Cogley's Eye Mechanism control code
-Updated with improved manual control mode and reversed eyelid servo directions
-"""
-
 import time
 from machine import Pin, I2C, ADC
 import random
@@ -359,4 +353,5 @@ while True:
                 
             time.sleep_ms(20)
             # Debug output (optional)
+
             # print(f"LR: {LR_value}, UD: {UD_value}, Blink: {blink_state}")
